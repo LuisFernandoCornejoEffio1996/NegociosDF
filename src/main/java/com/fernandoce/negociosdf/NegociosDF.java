@@ -4,6 +4,8 @@
 
 package com.fernandoce.negociosdf;
 
+import com.fernandoce.negociosdf.controllers.controlLogin;
+
 /**
  *
  * @author lfern
@@ -11,6 +13,7 @@ package com.fernandoce.negociosdf;
 public class NegociosDF {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        controlLogin ctLogin = new controlLogin();
+        ctLogin.setVisible(true);
     }
 }
