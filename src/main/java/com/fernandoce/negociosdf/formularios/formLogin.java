@@ -62,6 +62,7 @@ public class formLogin extends javax.swing.JFrame {
         fondo1.add(fondoIcono, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 400));
 
         panelForm.setBackground(new java.awt.Color(255, 255, 255));
+        panelForm.setOpaque(false);
         panelForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Gadugi", 1, 26)); // NOI18N
