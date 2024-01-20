@@ -14,12 +14,12 @@ import java.awt.RenderingHints;
  *
  * @author lfern
  */
-public class fondoLeft extends javax.swing.JPanel {
+public class header extends javax.swing.JPanel {
 
     /**
-     * Creates new form fondoLogin
+     * Creates new form header
      */
-    public fondoLeft() {
+    public header() {
         initComponents();
         setOpaque(false);
     }
@@ -28,10 +28,10 @@ public class fondoLeft extends javax.swing.JPanel {
     protected void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        GradientPaint gp = new GradientPaint(0, 0, Color.decode("#1CB5E0"), 0, getHeight(), Color.decode("#000046"));
-        g2.setPaint(gp);
+        g2.setPaint(new Color(201, 198, 198));
+        
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), 20, 20); // bordes redondos
-        g2.fillRect(20, 0, getWidth(), getHeight());
+        g2.fillRect(0, 20, getWidth(), getHeight()); // solo bordes superiores redondos
         super.paintChildren(g);
     }
 
@@ -44,15 +44,17 @@ public class fondoLeft extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setBackground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 2000, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 40, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

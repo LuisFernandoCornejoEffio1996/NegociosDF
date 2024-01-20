@@ -13,6 +13,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -42,8 +44,12 @@ public class conexion {
             cn = DriverManager.getConnection(Url, Usuario, Pasword);
 
         } catch (IOException | ClassNotFoundException | SQLException e) {
-            System.out.println("Error: " + e.getMessage());
-        }        
+            String[] options = { "Acceptar"};
+            int conectar = JOptionPane.showOptionDialog(null, "Error al conectar con la base de datos\n\nPor favor contactar a soporte tecnico\n\n"+e,"Conexion con Base de Datos",JOptionPane.ERROR_MESSAGE,0, null, options, options[0]);
+            if (conectar >= 0) {
+                System.exit(0);
+            }
+        }    
         return cn;
     }
     
