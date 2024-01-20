@@ -11,6 +11,7 @@ package com.fernandoce.negociosdf.model.entidades;
 public class tipodoc {
     private int idTipoDoc;
     private String descripcion;
+    private String sigla;
     private String fecha_creacion;
     private String estado;
 
@@ -28,6 +29,14 @@ public class tipodoc {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
     }
 
     public String getFecha_creacion() {

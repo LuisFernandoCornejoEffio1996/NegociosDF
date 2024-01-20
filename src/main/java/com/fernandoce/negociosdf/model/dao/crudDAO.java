@@ -4,15 +4,17 @@
  */
 package com.fernandoce.negociosdf.model.dao;
 
-import com.fernandoce.negociosdf.model.entidades.usuario;
 import java.util.List;
 
 /**
  *
  * @author lfern
+ * @param <T>
  */
-public interface loginDAO <T>{
-    public usuario login(String email, String password);
-    public T Datos(int idPersona);
-    public List<T> lista();
+public interface crudDAO <T>{
+    public List<T> listar();
+    public boolean insertar(T objeto);
+    public int modificar(T objeto);
+    public int eliminar(int idObjeto);
+    public T obtenerObjetoPorId(int idObjeto);
 }

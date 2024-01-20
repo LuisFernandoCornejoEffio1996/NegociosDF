@@ -17,12 +17,10 @@ public class persona {
     private String num_doc;
     private cargo cargoId;
     private String telefono;
-    private String dirección;
-    private String username;
-    private String password;
-    private String ultimo_acceso;
+    private String direccion;
     private String fecha_creación;
     private String estado;
+    private String nomCompleto;
 
     public int getIdPersona() {
         return idPersona;
@@ -88,36 +86,12 @@ public class persona {
         this.telefono = telefono;
     }
 
-    public String getDirección() {
-        return dirección;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDirección(String dirección) {
-        this.dirección = dirección;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getUltimo_acceso() {
-        return ultimo_acceso;
-    }
-
-    public void setUltimo_acceso(String ultimo_acceso) {
-        this.ultimo_acceso = ultimo_acceso;
+    public void setDirección(String direccion) {
+        this.direccion = direccion;
     }
 
     public String getFecha_creación() {
@@ -134,6 +108,14 @@ public class persona {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getNomCompleto() {
+        return nomCompleto;
+    }
+
+    public void setNomCompleto(String nomCompleto) {
+        this.nomCompleto = nomCompleto;
     }
     
 }
